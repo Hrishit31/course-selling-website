@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden ;
+  }
+
+
+#cardgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#banner {
+   height: auto;
+  max-width: 100%;
+}
+
+.banner-contain{
+  overflow-x: hidden;
+}
+
+#welcome {
+  text-align: center;
+  text-shadow: #FC0 1px 0 10px;;
+  color: aliceblue; 
+  font-size: 4vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#headline {
+  margin: 4% 0;
+  color: #E3FDFD;
+  text-shadow: black 1px 1px 10px;
+  font-size: 2.2vw;
+  padding: 0 20% ;
+  text-align: center;
+}
+
+#headline2 {
+  text-align: center;
+  color: antiquewhite; 
+  text-shadow: black 1px 1px 10px;
+  font-size: 2vw;
+}
+
+.card {
+position: relative;
+  overflow: hidden;
+}
+
+.imagebackground {
+  box-shadow: 2px 10px 4px rgba(37, 33, 33, 0.1);
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 300px;
+  object-fit: cover; 
+  border-radius: 5%;
+}
+
+.course-overlay {
+  position: absolute; 
+
+}
+
+.image-container {
+  position: relative;
+}
+
+
+
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  transition: top 0.3s ease;
+}
+
+.card:hover .overlay {
+  top: 50%;
+}
+
+.card:hover .image {
+  filter: blur(5px);
+}
+
+.image-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: none;
+}
+
+.card:hover .image-buttons {
+  display: block;
+}
+
+.cardcontent {
+  top: 0%;
+}
+
+
+
+.title {
+  margin-top: 0%;
+}
+
+#explorecard  {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+
+@keyframes mymove {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.box1 {
+  left: 0px;
+  position: relative;
+  animation: mymove 1s;
+}
+
+.explorecard-content {
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+
+@keyframes mymove2 {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.box2 {
+  width: 100%;
+  right: 0px;
+  position: relative;
+  animation: mymove2 1s;
+
+}
+
+.pricebuy {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+    position: absolute;
+  bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #explorecard {
+    flex-direction: column;
+  }
+  
+  .box2 {
+    padding-right: 0;
+  }
+  
+  .pricebuy {
+    position: static;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.title  {
+  font-size: 300%;
+  font-family: 'Times New Roman', Times, serif;
+  display : flex ;
+  justify-content: center;
+}
+
+
+
+
+.cardslider-content {
+  display: flex ;
+  gap: 5%;
+  justify-content: center;
+}
+
+.Coursecard {
+  flex: 0 0 auto; /* Allow card size to remain unchanged */
+  max-width: 100%; /* Ensure the card doesn't exceed container width */
+}
+
+.cardSlider {
+  margin: 0 20px;
+}
+
+.cardelement {
+  font-size: 1rem;
+}
+
+.cardtitle {
+  font-size: 2.5em;
+}
+
+.logedinbar { 
+  display: flex;
+  gap: 10px;
+}
+
+.box2image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+  height: 400px;
+}
+
+#explorebutton:hover {
+  box-shadow: 0px 16px 24px teal;
+}
